@@ -9,11 +9,11 @@
   "scripts": {
     "start": "node index.js",
     "dev": "node --watch index.js",
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "build:ui": "rm -rf dist && cd ../notes-app-frontend && npm run build && cp -r dist ../notes-app-backend",
-    "deploy:full": "npm run build:ui && git add . && git commit -m uibuild && git push"
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "dependencies": {
-    "express": "^5.1.0"
+    "dotenv": "^17.2.1",
+    "express": "^5.1.0",
+    "mongoose": "^8.17.0"
   }
 }
